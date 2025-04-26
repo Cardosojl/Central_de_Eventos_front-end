@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: rgb(251, 253, 255);
+}
+#news-container {
+    width: 70%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+}
+
+.news-item {
+    background-color: rgb(250, 247, 253);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.news-item h2 {
+    color: rgb(92, 3, 58);
+    margin-bottom: 10px;
+}
+
+.news-item p {
+    line-height: 1.6;
+    color: #333;
+}
+
+.news-item img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.news-date {
+    color: #666;
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+.welcome-section {
+    background-color: rgb(92, 3, 58);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.welcome-section h1 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.welcome-section p {
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+#navbar{
+    background-color: rgb(92, 3, 58);
+    color: aliceblue;
+    font-weight: bold;
+    display: flex;
+    justify-content:space-between;;
+    height: 90px;
+    border-bottom:solid 5px rgb(131, 231, 37);
+}
+
+#navbar img {
+    width: 100px;
+    margin-left: 10px;
+    margin-right: -10px;
+}
+
+#navbar div {
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#navbar a{
+    align-items: center;
+    padding: 20px;
+}
+
+#navbar a:hover{
+    color: rgb(131, 231, 37);
+    cursor: pointer;
+}
+#slider {
+    background-color: rgb(224, 224, 224);
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #000000;
+    background-size: 500px 800px;
+    background-position: bottom;
+}
+#slider .slide {
+    height: 100%;
+}
+#slider .active{
+    display: block;
+}
+#slider input[type=button] {
+    height: 20px;
+    width: 20px;
+    border-radius: 90px;
+    margin:10px;
+    border: none;
+    background-color: rgb(131, 231, 37);
+    cursor: pointer;
+}
+#slider input[type=button]:hover {
+    background-color: rgb(92, 3, 58);
+}
+#slider img {
+    width: 100%;
+    align-items: center;
+    display: none;
+}
+
+#logged_in_layout {
+    display: flex;
+    justify-content: flex-start;
+    align-items:start;
+    width: 1000px;
+    margin: 100px auto;
+}
+
+#leftbar {
+    background-color: rgb(250, 247, 253);
+    border-radius: 6px;
+    width: 180px;
+    margin-right: 150px;
+    border: 1px solid rgb(218, 218, 218);
+
+}
+#leftbar a {
+    display: block;
+    padding: 5px;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius: 6px;
+    border-bottom: 1px solid rgb(218, 218, 218);
+    font-size: 15px;
+    color: rgb(53, 52, 52);
+}
+#leftbar a:hover {
+    background-color: rgb(237, 236, 238);
+}
+
+#main_container {
+    width: 600px;    
+}
+#main_container  div {
+    padding-top: 30px;
+}
+#main_container  label {
+    margin-right: 5px;
+}
+
+.button_red {
+    background-color: rgb(231, 43, 37);
+    border: none;
+    border-radius: 10px;
+    padding: 8px;
+    color: white;
+    font-weight: bolder;
+}
+.button_red:hover {
+    background-color: rgb(218, 18, 11);
+}
+
+button {
+    background-color: rgb(131, 231, 37);
+    border: none;
+    border-radius: 10px;
+    padding: 8px;
+    color: white;
+    font-weight: bolder;
+}
+
+button:hover {
+    background-color: rgb(161, 236, 90);
+}
+
+input[type="text"], input[type="password"] {
+    border-radius: 4px;
+    border: 1px solid rgb(218, 218, 218);
+    padding: 2px;
+}
+
+a, p, label, h1, h2, h3, h4 {
+    text-decoration: none;
+    color: rgb(53, 52, 52);
+}
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+h3 {
+    color:rgb(92, 3, 58);
+}
+textarea {
+    width: 500px;
+    height: 300px;
+    resize: none;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 5px;
+}

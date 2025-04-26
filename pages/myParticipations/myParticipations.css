@@ -1,0 +1,106 @@
+#participations-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.participation-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.participation-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.participation-card h4 {
+    color: rgb(92, 3, 58);
+    margin-bottom: 10px;
+}
+
+.participation-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.participation-date, .participation-type, .participation-status {
+    color: #666;
+}
+
+.participation-status.approved {
+    color: rgb(131, 231, 37);
+    font-weight: bold;
+}
+
+#event-detail {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+#event-detail h4 {
+    color: rgb(92, 3, 58);
+    margin-bottom: 15px;
+}
+
+.detail-row {
+    margin-bottom: 10px;
+}
+
+.detail-label {
+    font-weight: bold;
+    color: rgb(92, 3, 58);
+}
+
+.event-description {
+    line-height: 1.6;
+    margin: 15px 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+#detail-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#loading {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+.no-events-message {
+    text-align: center;
+    padding: 30px;
+    color: #666;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    #logged_in_layout {
+        flex-direction: column;
+        width: 90%;
+    }
+    
+    #leftbar {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    #main_container {
+        width: 100%;
+    }
+}
