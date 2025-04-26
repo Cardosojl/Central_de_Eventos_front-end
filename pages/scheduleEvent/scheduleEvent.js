@@ -1,4 +1,4 @@
-window.addEventListener("load", loadElements);
+﻿window.addEventListener("load", loadElements);
 
 
 async function loadElements() {
